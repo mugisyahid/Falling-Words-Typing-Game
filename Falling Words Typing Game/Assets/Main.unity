@@ -137,6 +137,7 @@ AudioListener:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 653360309}
   m_Enabled: 1
+  m_ExtensionPropertyValues: []
 --- !u!124 &653360311
 Behaviour:
   m_ObjectHideFlags: 0
@@ -262,8 +263,8 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1506127307}
-  - component: {fileID: 1506127306}
   - component: {fileID: 1506127308}
+  - component: {fileID: 1506127306}
   - component: {fileID: 1506127309}
   - component: {fileID: 1506127310}
   m_Layer: 0
@@ -281,11 +282,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1506127305}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 78d13645174f19046ba2af9b861355a2, type: 3}
+  m_Script: {fileID: 11500000, guid: 94e6a68e18f1d4f159e4b3d8bb3c7f6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  words: []
-  wordSpawner: {fileID: 1506127309}
+  wordManager: {fileID: 1506127308}
 --- !u!4 &1506127307
 Transform:
   m_ObjectHideFlags: 0
@@ -297,7 +297,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1506127308
 MonoBehaviour:
@@ -307,10 +307,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1506127305}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 25b6ff7cb5e9c524e88c1933b58b8092, type: 3}
+  m_Script: {fileID: 11500000, guid: 89abb52c796a747d2804062ef8650d34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wordManager: {fileID: 1506127306}
+  words: []
+  wordSpawner: {fileID: 1506127309}
 --- !u!114 &1506127309
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -319,10 +320,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1506127305}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef2a8634e78a37140abe1d951be2beb3, type: 3}
+  m_Script: {fileID: 11500000, guid: 1916f0d2217834dfe96cf61f3479fe4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wordPrefab: {fileID: 1513577208808720, guid: 827bf4519a2ae0f49b6494c13ad6c379, type: 2}
+  wordPrefab: {fileID: 1831049766152070, guid: 28eb8cd9e08b840749fca70571abb1ea, type: 2}
   wordCanvas: {fileID: 2033587403}
 --- !u!114 &1506127310
 MonoBehaviour:
@@ -332,10 +333,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1506127305}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e709038c6023b804f90c9f0cac031974, type: 3}
+  m_Script: {fileID: 11500000, guid: e7c65660e95f6436889bf586d886fddf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wordManager: {fileID: 1506127306}
+  wordManager: {fileID: 1506127308}
   wordDelay: 1.5
 --- !u!1 &2033587399
 GameObject:
@@ -423,7 +424,7 @@ RectTransform:
   m_LocalScale: {x: 0.015, y: 0.015, z: 0.015}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}

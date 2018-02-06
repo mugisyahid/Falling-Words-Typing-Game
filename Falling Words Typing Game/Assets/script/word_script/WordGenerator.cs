@@ -23,9 +23,7 @@ public class WordGenerator : MonoBehaviour {
 	public static string GetRandomWord ()
 	{
 		int randomIndex = Random.Range(0, wordList.Length);
-		string randomWord = wordList[randomIndex];
-
-		return randomWord;
+		return wordList[randomIndex];
 	}
 
 }
